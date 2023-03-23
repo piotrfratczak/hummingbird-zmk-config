@@ -82,6 +82,8 @@
         v { key-positions = <12 13>; bindings = <&kp V>; layers = <DEF_L>; };
         k { key-positions = <16 17>; bindings = <&kp K>; layers = <DEF_L>; };
         z { key-positions = <10 11>; bindings = <&kp Z>; layers = <DEF_L>; };
+        d { key-positions = <12 21>; bindings = <&kp D>; layers = <DEF_L>; };
+        fslh { key-positions = <18 19>; bindings = <&kp FSLH>; layers = <DEF_L>; };
         bswrd { key-positions = <15 16>; bindings = <&kp BSWRD>; layers = <DEF_L>; };
         semi { key-positions = <24 25>; bindings = <&kp SEMI>; layers = <DEF_L SYM_L NUM_L>; };
 
