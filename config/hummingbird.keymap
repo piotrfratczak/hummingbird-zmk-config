@@ -105,7 +105,7 @@
         dllr { key-positions = <18 19>; bindings = <&kp DLLR>; layers = <DEF_L>; }; // temporary
         bswrd { key-positions = <15 16>; bindings = <&kp BSWRD>; layers = <DEF_L>; };
         semi { key-positions = <24 25>; bindings = <&kp SEMI>; layers = <DEF_L SYM_L NUM_L>; };
-        tilde { key-positions = <10 11>; bindings = <&kp TILDE>; layers = <SYM_L; };
+        tilde { key-positions = <10 11>; bindings = <&kp TILDE>; layers = <SYM_L>; };
 
         /* Brackets */
         lbkt { key-positions = <1 11>; bindings = <&kp LBKT>; layers = <DEF_L SYM_L NUM_L>; };
