@@ -153,10 +153,10 @@
         sym_layer {
             label = "Sym";
             bindings = <
-                &kp EXCL   &kp EQUAL    &kp SQT   &kp DQT  &kp PRCNT   &kp COLON &kp ARTRK &kp UNDER &kp LT    &kp GT
-                &kp QMARK  &kp HASH  &kp MINUS &kp PLUS  &kp AT      &kp FSLH  &kp LGUI  &kp LSHFT &kp LALT  &kp SEMI
-                           &kp PIPE  &kp CARET &kp DLLR                        &kp BSLH  &kp LT    &kp GT
-                                              &trans    &trans      &trans    &trans
+                &kp EXCL   &kp EQUAL &kp SQT   &kp DQT   &kp PRCNT    &kp COLON &kp ARTRK &kp UNDER &kp LT    &kp GT
+                &kp QMARK  &kp HASH  &kp MINUS &kp PLUS  &kp AT       &kp FSLH  &kp LGUI  &kp LSHFT &kp LALT  &kp SEMI
+                           &kp PIPE  &kp CARET &kp DLLR                         &kp BSLH  &kp LPAR  &kp AMPS
+                                               &trans    &trans       &trans    &trans
             >;
         };
         num_layer {
