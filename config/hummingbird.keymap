@@ -144,7 +144,7 @@
             label = "Sec";
             bindings = <
                 &kp Z      &kp PLZ  &trans     &trans     &trans        &trans     &kp PLL    &trans     &trans     &trans
-                &kp PLA    &kp Z    &kp PLS    &kp V      &trans        &kp K      &kp PLN    &kp PLE    &trans     &kp PLO
+                &kp PLA    &kp Z    &kp PLS    &kp V      &trans        &kp K      &kp PLN    &kp PLE    &sk LSHIFT &kp PLO
                            &kp PLZI &kp PLC    &trans                              &kp K      &trans     &trans 
                                                  &trans     &kp ENTER     &trans     &trans
 
