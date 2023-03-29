@@ -24,6 +24,7 @@
 #define BSWRD LA(BSPC)
 #define LWRD LA(LARW)
 #define RWRD LA(RARW)
+#define HDR LG(LA(1))
 #define PLA LA(A)
 #define PLC LA(C)
 #define PLE LA(E)
@@ -89,7 +90,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <SEC_L NAV_L SYM_L>;
+            if-layers = <NAV_L SEC_L>;
             then-layer = <NUM_L>;
         };
     };
@@ -108,10 +109,8 @@
         v { key-positions = <12 13>; bindings = <&kp V>; layers = <DEF_L>; };
         k { key-positions = <16 17>; bindings = <&kp K>; layers = <DEF_L>; };
         z { key-positions = <10 11>; bindings = <&kp Z>; layers = <DEF_L>; };
-        d { key-positions = <12 21>; bindings = <&kp D>; layers = <DEF_L>; };  // temporary
 
         /* Symbols */
-        dllr { key-positions = <18 19>; bindings = <&kp DLLR>; layers = <DEF_L>; }; // temporary
         bswrd { key-positions = <15 16>; bindings = <&kp BSWRD>; layers = <DEF_L>; };
         semi { key-positions = <24 25>; bindings = <&kp SEMI>; layers = <DEF_L SYM_L NUM_L>; };
         tilde { key-positions = <10 11>; bindings = <&kp TILDE>; layers = <SYM_L>; };
@@ -127,6 +126,7 @@
         /* Convenience */
         esc { key-positions = <3 4>; bindings = <&kp ESC>; };
         del { key-positions = <13 14>; bindings = <&kp DEL>; };
+        enter { key-positions = <27 28>; bindings = <&kp ENTER>; layers = <DEF_L NAV_L>; };
         slall { key-positions = <20 21>; bindings = <&kp SLALL>; layers = <NAV_L>; };
     };
 
@@ -143,10 +143,10 @@
         second_layer {
             label = "Sec";
             bindings = <
-                &kp Z      &kp PLZ  &trans     &trans     &trans        &trans     &kp PLL    &trans     &trans     &trans
-                &kp PLA    &kp Z    &kp PLS    &kp V      &trans        &kp K      &kp PLN    &kp PLE    &sk LSHIFT &kp PLO
-                           &kp PLZI &kp PLC    &trans                              &kp K      &trans     &trans 
-                                                 &trans     &kp ENTER     &trans     &trans
+                &kp PLA    &kp PLZ  &trans     &trans     &trans        &trans     &kp PLL    &trans     &trans     &trans
+                &kp Z      &kp Z    &kp PLS    &kp V      &trans        &kp K      &kp K      &kp PLE    &sk LSHIFT &kp PLO
+                           &kp PLZI &kp PLC    &trans                              &kp PLN    &trans     &trans 
+                                               &trans     &kp ENTER     &trans     &trans
 
             >;
         };
@@ -171,9 +171,9 @@
         num_layer {
             label = "Num";
             bindings = <
-                &none     &none     &none     &kp LCTRL &none       &none     &kp LCTRL &none     &none     &none 
+                &kp HDR   &kp LCTRL &kp LALT  &kp LGUI  &none       &none     &kp LGUI  &kp LALT  &kp LCTRL &none 
                 &kp N1    &kp N2    &kp N3    &kp N4    &kp N5      &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-                          &kp LALT  &kp LGUI  &kp N5                          &kp N6    &kp LGUI  &kp LALT
+                          &none     &none     &kp N5                          &kp N6    &none     &none 
                                               &trans    &trans      &trans    &trans
             >;
         };
