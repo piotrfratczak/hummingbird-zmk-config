@@ -419,10 +419,10 @@ path {
 <text x="450.0" y="1316.0" class="tap">6</text>
 <rect rx="6.0" ry="6.0" x="482.0" y="1290.0" width="56.0" height="52.0" class=""/>
 <rect rx="6.0" ry="6.0" x="542.0" y="1290.0" width="56.0" height="52.0" class=""/>
-<rect rx="6.0" ry="6.0" x="212.0" y="1346.0" width="56.0" height="52.0" class=""/>
-<rect rx="6.0" ry="6.0" x="272.0" y="1346.0" width="56.0" height="52.0" class="held"/>
-<rect rx="6.0" ry="6.0" x="362.0" y="1346.0" width="56.0" height="52.0" class="held"/>
-<rect rx="6.0" ry="6.0" x="422.0" y="1346.0" width="56.0" height="52.0" class=""/>
+<rect rx="6.0" ry="6.0" x="212.0" y="1346.0" width="56.0" height="52.0" class="held"/>
+<rect rx="6.0" ry="6.0" x="272.0" y="1346.0" width="56.0" height="52.0" class=""/>
+<rect rx="6.0" ry="6.0" x="362.0" y="1346.0" width="56.0" height="52.0" class=""/>
+<rect rx="6.0" ry="6.0" x="422.0" y="1346.0" width="56.0" height="52.0" class="held"/>
 <rect rx="6.0" ry="6.0" x="526.0" y="1303.0" width="28.0" height="26.0" class="combo"/>
 <text x="540.0" y="1316.0" class="combo">;</text>
 <rect rx="6.0" ry="6.0" x="106.0" y="1219.0" width="28.0" height="26.0" class="combo"/>
