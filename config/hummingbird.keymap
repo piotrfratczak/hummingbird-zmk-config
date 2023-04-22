@@ -126,7 +126,7 @@
         second_layer {
             label = "Sec";
             bindings = <
-                &kp PLA    &kp PLZ  &trans     &trans     &trans        &trans     &kp PLL    &trans     &trans     &trans
+                &kp PLA    &kp PLZ  &trans     &trans     &trans        &trans     &kp PLL    &kp F8     &kp F9     &kp F10
                 &kp Z      &kp Z    &kp PLS    &kp V      &trans        &kp K      &kp K      &kp PLE    &sk LSHIFT &kp PLO
                            &kp PLZI &kp PLC    &trans                              &kp PLN    &trans     &trans 
                                                &trans     &kp ENTER     &trans     &trans
