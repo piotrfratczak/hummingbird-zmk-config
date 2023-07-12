@@ -112,7 +112,7 @@
         esc { key-positions = <3 4>; bindings = <&kp ESC>; };
         del { key-positions = <13 14>; bindings = <&kp DEL>; };
         slall { key-positions = <20 21>; bindings = <&kp SLALL>; layers = <NAV_L>; };
-        nums { key-positios = <16 17 18>; bindings =  <&to NUM_L>; layers = <DEF_L>;  };
+        nums { key-positios = <23 24>; bindings = <&to NUM_L>; layers = <DEF_L>;  };
     };
 
     keymap {
