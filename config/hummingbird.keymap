@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 /* Layers */
 #define DEF_L 0
@@ -126,8 +127,8 @@
         second_layer {
             label = "Sec";
             bindings = <
-                &kp PLA    &kp PLZ  &trans     &trans     &trans        &trans     &kp PLL    &kp F8     &kp F9     &kp F10
-                &kp Z      &kp Z    &kp PLS    &kp V      &trans        &kp K      &kp K      &kp PLE    &sk LSHIFT &kp PLO
+                &kp PLA    &kp PLZ  &trans     &trans     &bt BT_SEL 0  &trans     &kp PLL    &kp F8     &kp F9     &kp F10
+                &kp Z      &kp Z    &kp PLS    &kp V      &bt BT_SEL 1  &kp K      &kp K      &kp PLE    &sk LSHIFT &kp PLO
                            &kp PLZI &kp PLC    &trans                              &kp PLN    &trans     &trans 
                                                &trans     &kp ENTER     &trans     &trans
 
@@ -139,7 +140,7 @@
                 &kp BSPC  &kp UNDO  &kp F3    &kp F4    &kp REDO    &kp PG_UP &kp HOME  &kp UARW  &kp END   &kp ESC
                 &kp BSWRD &sm LALT  &sm LSHFT &sm LGUI  &sm LCTRL   &kp PG_DN &kp LARW  &kp DARW  &kp RARW  &kp TAB
                           &kp CUT   &kp COPY  &kp PASTE                       &kp LWRD  &kp ENTER  &kp RWRD
-                                              &trans    &trans      &to NUM_L &trans
+                                              &trans    &trans      &sm LGUI  &trans
             >;
         };
         sym_layer {
