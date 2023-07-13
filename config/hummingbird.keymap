@@ -63,7 +63,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk LSHIFT >, <&tog NUM_L>;
+            bindings = <&sk LSHIFT >, <&mo NUM_L>;
         };
     };
 
