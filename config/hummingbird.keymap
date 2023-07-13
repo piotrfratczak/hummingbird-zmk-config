@@ -145,10 +145,10 @@
         nav_layer {
             label = "Nav";
             bindings = <
-                &kp BSPC  &kp UNDO  &kp F3    &kp F4    &kp REDO    &kp PG_UP &kp HOME  &kp UARW  &kp END   &kp ESC
-                &kp BSWRD &sm LALT  &sm LSHFT &sm LGUI  &sm LCTRL   &kp PG_DN &kp LARW  &kp DARW  &kp RARW  &kp TAB
-                          &kp CUT   &kp COPY  &kp PASTE                       &kp LWRD  &kp ENTER  &kp RWRD
-                                              &trans    &trans      &sm LGUI  &trans
+                &kp BSPC  &kp UNDO  &kp F3    &kp F4    &kp REDO    &kp PG_UP  &kp HOME  &kp UARW  &kp END   &kp ESC
+                &kp BSWRD &sm LALT  &sm LSHFT &sm LGUI  &sm LCTRL   &kp PG_DN  &kp LARW  &kp DARW  &kp RARW  &kp TAB
+                          &kp CUT   &kp COPY  &kp PASTE                        &kp LWRD  &kp ENTER  &kp RWRD
+                                              &trans    &trans      &caps_word &trans
             >;
         };
         sym_layer {
