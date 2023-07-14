@@ -58,12 +58,12 @@
             quick-release;
         };
 
-        td0: tap_dance_0 {
+        shnum: shift_num {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
+            label = "SHIFT_NUM";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&sk LSHIFT >, <&sl NUM_L>;
+            bindings = <&sk LSHIFT >, <&tog NUM_L>;
         };
     };
 
@@ -77,14 +77,6 @@
             bindings
                 = <&macro_tap &sl SEC_L>
                 ;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <NAV_L SEC_L>;
-            then-layer = <NUM_L>;
         };
     };
 
@@ -129,7 +121,7 @@
                 &kp Q     &kp W     &kp F     &kp P     &kp B       &kp J    &kp L     &kp U     &kp Y     &sl SYM_L
                 &kp A     &kp R     &kp S     &kp T     &kp G       &kp M    &kp N     &kp E     &kp I     &kp O
                           &kp X     &kp C     &kp D                          &kp H     &kp COMMA &kp DOT
-                                              &sl NAV_L &kp SPACE   &td0     &slsec 
+                                              &sl NAV_L &kp SPACE   &shnum   &slsec 
             >;
         };
         second_layer {
@@ -138,7 +130,7 @@
                 &kp PLA    &kp PLZ  &trans     &trans     &bt BT_SEL 0  &trans     &kp PLL    &kp F8     &kp F9     &kp F10
                 &kp Z      &kp Z    &kp PLS    &kp V      &bt BT_SEL 1  &kp K      &kp K      &kp PLE    &sk LSHIFT &kp PLO
                            &kp PLZI &kp PLC    &trans                              &kp PLN    &trans     &trans 
-                                               &trans     &kp ENTER     &trans     &trans
+                                               &to DEF_L     &kp ENTER     &trans     &trans
 
             >;
         };
